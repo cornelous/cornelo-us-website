@@ -1,47 +1,77 @@
-
+cat > index.html <<'EOF'
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cornelo - Personal technology and software projects.">
-    <title>Cornelo | Technology & Software</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 80px auto;
-            padding: 24px;
-            line-height: 1.7;
-            color: #263238;
-            background: #ffffff;
-        }
-        h1 { color: #1565c0; }
-        footer {
-            margin-top: 60px;
-            border-top: 1px solid #ddd;
-            padding-top: 20px;
-            font-size: 14px;
-        }
-        a { color: #1565c0; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cornelo develops technology and software projects, including local Google Drive synchronisation using rclone.">
+  <title>Cornelo | Technology & Software</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 850px;
+      margin: 60px auto;
+      padding: 24px;
+      line-height: 1.7;
+      color: #263238;
+      background: #fff;
+    }
+    h1, h2 { color: #1565c0; }
+    a { color: #1565c0; }
+    footer {
+      margin-top: 55px;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
+  <header>
     <h1>Welcome to Cornelo</h1>
+    <p>Technology, software development and practical cloud solutions.</p>
+  </header>
+
+  <main>
+    <h2>About Cornelo</h2>
+    <p>
+      Cornelo is an independent technology platform focused on software
+      development, cloud infrastructure, automation and practical
+      technology solutions.
+    </p>
+
+    <h2>Cornelo Google Drive Sync</h2>
+    <p>
+      Cornelo Google Drive Sync is a software project that uses
+      <a href="https://rclone.org/">rclone</a> and Google's OAuth 2.0
+      authentication to allow users to synchronise files from their
+      Google Drive accounts to storage on their own computers.
+    </p>
 
     <p>
-        Cornelo is a personal technology platform supporting
-        software development, cloud infrastructure and
-        technology projects.
+      Authentication and file transfers take place directly between
+      Google and the user's local computer. Cornelo does not operate
+      a central server that receives or stores users' Google Drive files.
+    </p>
+
+    <p>
+      Users control their synchronisation configuration, local storage
+      and Google account permissions.
     </p>
 
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:clive@cornelo.us">clive@cornelo.us</a></p>
+    <p>
+      For questions about Cornelo or its software projects, contact:
+      <a href="mailto:clive@cornelo.us">clive@cornelo.us</a>
+    </p>
+  </main>
 
-    <footer>
-        <a href="/privacy">Privacy Policy</a> |
-        <a href="/terms">Terms of Service</a>
-        <p>&copy; 2026 Cornelo. All rights reserved.</p>
-    </footer>
+  <footer>
+    <a href="/privacy/">Privacy Policy</a> |
+    <a href="/terms/">Terms of Service</a>
+    <p>&copy; 2026 Cornelo. All rights reserved.</p>
+  </footer>
 </body>
 </html>
+EOF
